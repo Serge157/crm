@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-магазин квітів</title>
+
+    <!-- Підключення Bootstrap через CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Додаткові стилі */
+        .flower-card {
+            margin-bottom: 20px;
+        }
+        .flower-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="bg-primary text-white py-4">
+        <div class="container">
+            <h1 class="display-4">Інтернет-магазин квітів</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="/">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/flowers/">Квіти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основний контент -->
+    <main class="container py-5">
+        {% block content %}
+        <!-- Тут буде основний вивід контенту -->
+        {% endblock %}
+    </main>
+
+    <!-- Підвал -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Інтернет-магазин квітів</p>
+        </div>
+    </footer>
+
+    <!-- Підключення Bootstrap JS (для деяких компонентів, якщо потрібно) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
